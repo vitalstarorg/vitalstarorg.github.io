@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Under Construction</title>
+  <meta name="description" content="This site is currently under construction. Please check back soon." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%9A%A7%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg-1: #0f172a;
+      --bg-2: #111827;
+      --card: #0b1220;
+      --muted: #9ca3af;
+      --text: #e5e7eb;
+      --accent: #f59e0b;
+      --accent-2: #f97316;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 70% -10%, #1f2937 10%, transparent 60%) no-repeat,
+                  radial-gradient(1200px 800px at -10% 110%, #111827 10%, transparent 60%) no-repeat,
+                  linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    main {
+      width: 100%;
+      max-width: 720px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.05);
+      padding: clamp(20px, 5vw, 42px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--muted);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 999px;
+      padding: 8px 14px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      margin: 8px 0 8px;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing: 0.4px;
+    }
+    p.lead {
+      margin: 0 auto 22px;
+      max-width: 52ch;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: clamp(15px, 2.2vw, 18px);
+    }
+    .barrier {
+      --stripe: repeating-linear-gradient(45deg, var(--accent) 0 14px, var(--accent-2) 14px 28px);
+      position: relative;
+      width: min(520px, 90%);
+      height: 18px;
+      margin: 26px auto 18px;
+      background: var(--stripe);
+      border-radius: 6px;
+      border: 1px solid rgba(0,0,0,0.25);
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.35), inset 0 0 0 2px rgba(0,0,0,0.15);
+    }
+    .barrier::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.25) 40%, rgba(255,255,255,0) 60%);
+      transform: translateX(-100%);
+      animation: sweep 2.8s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes sweep {
+      to { transform: translateX(100%); }
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 14px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.25); transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+    .btn.primary {
+      background: linear-gradient(180deg, rgba(245,158,11,0.18), rgba(249,115,22,0.18));
+      border-color: rgba(249,115,22,0.55);
+    }
+    footer {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,1px,1px); border: 0;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <main role="main" aria-labelledby="title">
+    <div class="badge" aria-hidden="true">
+      <span>🚧</span>
+      <span>Site Maintenance</span>
+    </div>
+    <h1 id="title">We&rsquo;re building something great</h1>
+    <div class="barrier" role="img" aria-label="Animated construction barrier"></div>
+    <p class="lead">
+      This page is <strong>under construction</strong>. Thanks for your patience while we finish setting things up.
+      Check back soon!
+    </p>
+
+    <div class="actions">
+      <!-- Replace the href below with your contact email or link -->
+      <a class="btn primary" href="mailto:hello@example.com" aria-label="Contact us via email">
+        ✉️ Contact Us
+      </a>
+      <!-- Optional status link; replace with your real status/blog URL -->
+      <a class="btn" href="#" aria-label="Read status updates">
+        📢 Status Updates
+      </a>
+    </div>
+
+    <footer>
+      <span>Want something simpler? Delete the <code>&lt;style&gt;</code> block and keep the HTML.</span>
+    </footer>
+  </main>
+</body>
+</html>
